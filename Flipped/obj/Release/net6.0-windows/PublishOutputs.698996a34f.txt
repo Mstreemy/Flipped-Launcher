@@ -1,0 +1,11 @@
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\Flipped.exe
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\runtimes\win-x64\native\WebView2Loader.dll
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\runtimes\win-arm64\native\WebView2Loader.dll
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\Flipped.dll
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\Flipped.runtimeconfig.json
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\Flipped.pdb
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\runtimes\win\native\MicaWPFRuntimeComponent.dll
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\Flipped.deps.json

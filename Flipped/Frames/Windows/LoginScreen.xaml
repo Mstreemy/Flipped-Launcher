@@ -1,0 +1,55 @@
+﻿<Window x:Class="Flipped.Frames.Windows.LoginScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:local="clr-namespace:Flipped.Frames.Windows"
+        xmlns:WebView="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:mica="clr-namespace:MicaWPF.Controls;assembly=MicaWPF"
+        mc:Ignorable="d"
+        Background="#242424"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="CanMinimize"
+        Title="Flipped" Height="620" Width="1020">
+    <Window.Resources>
+        <!-- Resources -->
+    </Window.Resources>
+    <Grid>
+        <!-- Top Bar -->
+        <Border Background="#121212" x:Name="TopBar" Margin="0,0,0,602"
+        MouseLeftButtonDown="TopBar_MouseLeftButtonDown"
+        MouseLeftButtonUp="TopBar_MouseLeftButtonUp"
+        MouseMove="TopBar_MouseMove">
+        </Border>
+        <mica:Button Margin="1001,0,0,0" Foreground="Gray" Click="Close" FontFamily="Roboto" FontSize="10" Background="Transparent" BorderThickness="0" VerticalAlignment="Top" Height="18">X</mica:Button>
+        <mica:Button Margin="977,0,24,0" Foreground="Gray" Click="Minimize" FontWeight="Black" FontFamily="Roboto" FontSize="10" Background="Transparent" BorderThickness="0" VerticalAlignment="Top" Height="18">-</mica:Button>
+        <!-- Log In -->
+        <Border HorizontalAlignment="Center" Width="1074" Margin="0,-29,0,0">
+            <Border.Background>
+                <ImageBrush ImageSource="/Assets/LoginBackground.png"></ImageBrush>
+            </Border.Background>
+        </Border>
+        <Border Margin="320,206,320,141" CornerRadius="5" Opacity="0.6" Background="#181c2c">
+        </Border>
+        <Image Source="/Assets/AppLogo.png" Margin="472,222,472,322"></Image>
+        <TextBlock Foreground="White" TextWrapping="Wrap" FontSize="15" TextAlignment="Center" FontWeight="Medium" Margin="346,310,346,250">Welcome to Flipped! Please login or create an account</TextBlock>
+        <ui:TextBox Margin="354,375,354,213"  x:Name="TokenBox" PlaceholderEnabled="True" PlaceholderText="Token"></ui:TextBox>
+        <ui:Button Click="LoginClick" Margin="0,425,0,0" VerticalAlignment="Top" Height="32" Width="313" HorizontalAlignment="Center">Next</ui:Button>
+        <!-- Message Boxes -->
+        <Border x:Name="ErrorBox" Visibility="Collapsed" Background="Maroon" Opacity="1" CornerRadius="10" Margin="658,530,27,15">
+            <Grid>
+                <TextBlock Text="    &#xE711;" FontFamily="Segoe MDL2 Assets" FontSize="25" FontWeight="Medium" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                <TextBlock Text="Error Message" x:Name="ErrorMSG" FontSize="17" FontWeight="Medium" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Width="255" Margin="80,0,0,0"/>
+            </Grid>
+        </Border>
+        <Border x:Name="ValidBox" Visibility="Collapsed" Background="ForestGreen" Opacity="1" CornerRadius="10" Margin="658,530,27,15">
+            <Grid>
+                <TextBlock Text="    &#xE73E;" FontFamily="Segoe MDL2 Assets" FontSize="25" FontWeight="Medium" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                <TextBlock Text="Valid Message" x:Name="ValidMSG" FontSize="17" FontWeight="Medium" Foreground="White" HorizontalAlignment="Left" VerticalAlignment="Center" Width="243" Margin="82,0,0,0"/>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

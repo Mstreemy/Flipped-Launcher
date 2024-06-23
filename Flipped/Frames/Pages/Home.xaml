@@ -1,0 +1,94 @@
+﻿<Page x:Class="Flipped.Frames.Pages.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Flipped.Frames.Pages"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      mc:Ignorable="d" 
+      d:DesignHeight="582" d:DesignWidth="942"
+      Title="Home">
+
+    <Grid>
+        <Border Background="#040d1c" CornerRadius="10" Margin="15,16,269,464">
+            <Grid Margin="0,0,30,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition Width="4*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock FontSize="20" FontFamily="Arial Nova" VerticalAlignment="Top" x:Name="UsernameText" FontWeight="Bold" Foreground="White" Margin="119,31,-122,0" Height="23" Grid.ColumnSpan="2">Welcome, Player!</TextBlock>
+                <TextBlock FontSize="15" FontFamily="Arial Nova" VerticalAlignment="Top" FontWeight="Normal" Foreground="White" Margin="124,59,-121,0" Height="17" Grid.ColumnSpan="2">Enjoy Flipped!</TextBlock>
+                <TextBlock FontSize="15" FontFamily="Arial Nova" x:Name="Title" VerticalAlignment="Top" FontWeight="Normal" Foreground="White" Margin="0,138,-122,0" Grid.Column="1" Height="17">Enjoy Flipped!</TextBlock>
+                <Border Margin="0,-18,1,0">
+                    <Border.Background>
+                        <ImageBrush x:Name="UserSkin" ImageSource="/Assets/UserSkin.png" ></ImageBrush>
+                    </Border.Background>
+                </Border>
+            </Grid>
+        </Border>
+        <Border Background="#040d1c" CornerRadius="10" Margin="692,16,18,464">
+            <Grid Margin="0,0,10,-32">
+                <Ellipse Height="66" Stroke="Transparent" StrokeThickness="2" VerticalAlignment="Top" Margin="146,18,10,0">
+                    <Ellipse.Fill>
+                        <ImageBrush x:Name="PFP" ImageSource="/Assets/UserSkin.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock FontSize="12" x:Name="UsernameText2" FontFamily="Arial Nova" VerticalAlignment="Top" FontWeight="Bold" Foreground="White" Margin="21,35,41,0">Player</TextBlock>
+                <TextBlock x:Name="UserID" FontSize="9" FontFamily="Arial Nova" VerticalAlignment="Top"   FontWeight="Normal" Foreground="Gray" Margin="21,56,62,0">User ID</TextBlock>
+            </Grid>
+        </Border>
+        <Border CornerRadius="10" Margin="17,136,18,296">
+            <Border.Background>
+                <ImageBrush Stretch="UniformToFill" x:Name="NewsBG" ImageSource="/Assets/NewsBG2.jpg"></ImageBrush>
+            </Border.Background>
+            <Border.Effect>
+                <BlurEffect Radius="3"/>
+            </Border.Effect>
+        </Border>
+        <Border CornerRadius="10" Margin="17,136,18,296">
+            <Border.Background>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </Border.Background>
+            <Grid>
+                <TextBlock Text="Flipped" x:Name="Header" Margin="33,31,201,0" VerticalAlignment="Top" Height="40" FontFamily="Arial Nova" FontSize="25" Foreground="#FFF9F9F9" FontWeight="Bold"/>
+                <TextBlock TextWrapping="Wrap" x:Name="Content" Text="Welcome to Flipped! We host 19.10 Europe and North America, we are the #1 leading OGFN community, come in and join!" Margin="33,71,168,0" VerticalAlignment="Top" Height="57" FontFamily="Arial Nova" FontSize="13" Foreground="#FFF9F9F9" RenderTransformOrigin="0.5,0.5" />
+                <Ellipse x:Name="NewsP1" Fill="White" Margin="33,149,863,18"/>
+                <Ellipse x:Name="NewsP2" Fill="#363636" Margin="64,149,831,18"/>
+                <Ellipse x:Name="NewsP3" Fill="#363636" Margin="97,149,799,18"/>
+            </Grid>
+        </Border>
+        <Border Margin="17,315,750,82" x:Name="Season1" CornerRadius="5">
+            <Border.Background>
+                <ImageBrush x:Name="Season1BG" ImageSource="/Assets/Season1Poster.jpg" Stretch="UniformToFill"/>
+            </Border.Background>
+            <Grid Margin="0,0,-1,-52">
+                <ui:Button Margin="0,210,0,0" Click="Season1Click" Background="#7864e4" VerticalAlignment="Top" Height="28" Width="173" HorizontalAlignment="Center">
+                    <ui:SymbolIcon Symbol="Play12"></ui:SymbolIcon>
+                </ui:Button>
+                <TextBlock Margin="3,191,44,28" x:Name="Season1Title" Foreground="White" FontWeight="Bold" FontSize="12">Fortnite 1.8</TextBlock>
+            </Grid>
+        </Border>
+        <Border Margin="223,315,544,82" x:Name="Season2" CornerRadius="5">
+            <Border.Background>
+                <ImageBrush x:Name="Season2BG" ImageSource="/Assets/Season2Poster.jpg" Stretch="UniformToFill"/>
+            </Border.Background>
+            <Grid Margin="0,0,-1,-52">
+                <ui:Button Margin="0,210,0,0" Click="Season2Click" Background="#7864e4" VerticalAlignment="Top" Height="28" Width="173" HorizontalAlignment="Center">
+                    <ui:SymbolIcon Symbol="Play12"></ui:SymbolIcon>
+                </ui:Button>
+                <TextBlock Margin="3,191,53,28" x:Name="Season2Title" Foreground="White" FontWeight="Bold" FontSize="12">Fortnite 2.5</TextBlock>
+            </Grid>
+        </Border>
+        <Border Margin="428,315,339,82" x:Name="Season3" CornerRadius="5">
+            <Border.Background>
+                <ImageBrush x:Name="Season3BG" ImageSource="/Assets/Season3Poster.jpg" Stretch="UniformToFill"/>
+            </Border.Background>
+            <Grid Margin="0,0,-1,-52">
+                <ui:Button Margin="0,210,0,0" Click="Season3Click" Background="#7864e4" VerticalAlignment="Top" Height="28" Width="173" HorizontalAlignment="Center">
+                    <ui:SymbolIcon Symbol="Play12"></ui:SymbolIcon>
+                </ui:Button>
+                <TextBlock Margin="3,191,49,28" x:Name="Season3Title" Foreground="White" FontWeight="Bold" FontSize="12">Fortnite 3.5</TextBlock>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

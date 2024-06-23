@@ -1,0 +1,25 @@
+﻿<Window x:Class="Flipped.Frames.Windows.LoadingScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Flipped.Frames.Windows"
+        xmlns:dx="clr-namespace:SourceChord.FluentWPF;assembly=FluentWPF"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        mc:Ignorable="d"
+        ResizeMode="CanMinimize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        Background="Transparent"
+        Title="Flipped" Height="620" Width="1020">
+    <Grid>
+        <!-- Main Loading Assets -->
+        <Border HorizontalAlignment="Center" Width="1074" Margin="0,-29,0,0">
+            <Border.Background>
+                <ImageBrush ImageSource="/Assets/LoginBackground.png"></ImageBrush>
+            </Border.Background>
+        </Border>
+        <Image Source="/Assets/AppLogo.png" Margin="451,193,451,307" RenderTransformOrigin="0.724,0.413"></Image>
+        <ui:ProgressRing IsIndeterminate="True" Foreground="#FFCECECE" Margin="480,360,480,200"/>
+    </Grid>
+</Window>

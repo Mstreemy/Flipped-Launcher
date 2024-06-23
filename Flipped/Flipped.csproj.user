@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Frames\Pages\Home.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frames\Pages\Library.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frames\Pages\Settings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frames\Pages\Shop.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frames\Windows\LoadingScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Frames\Windows\LoginScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Frames\Pages\Home.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frames\Pages\Library.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frames\Pages\Settings.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frames\Pages\Shop.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frames\Windows\LoadingScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frames\Windows\LoginScreen.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Frames\Windows\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Styles\TextBoxStyle.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

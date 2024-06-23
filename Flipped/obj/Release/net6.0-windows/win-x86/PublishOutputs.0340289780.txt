@@ -1,0 +1,5 @@
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\win-x86\Flipped.pdb
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\win-x86\runtimes\win-x86\native\WebView2Loader.dll
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\win-x86\MicaWPFRuntimeComponent.dll
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\win-x86\WebView2Loader.dll
+C:\Users\Mstre\Downloads\Flipped-Launcher\Flipped-Launcher\Flipped\bin\Release\net6.0-windows\publish\win-x86\Flipped.exe

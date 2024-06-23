@@ -1,0 +1,77 @@
+﻿<Window x:Class="Flipped.Frames.Windows.MainWindow"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        xmlns:local="clr-namespace:Flipped.Frames.Windows"
+        xmlns:WebView="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
+        xmlns:mica="clr-namespace:MicaWPF.Controls;assembly=MicaWPF"
+        mc:Ignorable="d"
+        Background="#242424"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="CanMinimize"
+        Title="Flipped" Height="620" Width="1020">
+    <Grid>
+        <Border Margin="-26,-30,0,0">
+            <Border.Background>
+                <ImageBrush ImageSource="/Assets/LoginBackground.png"></ImageBrush>
+            </Border.Background>
+        </Border>
+        <Border x:Name="TopBar" Margin="0,0,0,586"
+        MouseLeftButtonDown="TopBar_MouseLeftButtonDown"
+        MouseLeftButtonUp="TopBar_MouseLeftButtonUp"
+        MouseMove="TopBar_MouseMove" Grid.ColumnSpan="2">
+            <Border.Background>
+                <ImageBrush ImageSource="/Assets/LoginBackground.png" Stretch="UniformToFill"></ImageBrush>
+            </Border.Background>
+        </Border>
+        <!-- Top Bar -->
+        <mica:Button Margin="975,0,0,0" Click="Close" Foreground="White" Background="Transparent" FontFamily="Segoe" FontSize="20" VerticalContentAlignment="Center" BorderThickness="0" VerticalAlignment="Top" Height="37" Grid.Column="1">x</mica:Button>
+        <mica:Button Margin="934,0,41,0" Click="Minimize" Foreground="White" Background="Transparent" FontFamily="Segoe" FontSize="20" VerticalContentAlignment="Center" BorderThickness="0" VerticalAlignment="Top" Height="37" Grid.Column="1">-</mica:Button>
+        <Image Source="/Assets/AppLogo.png" Margin="6,6,984,588" Grid.Column="1"></Image>
+        <TextBlock Margin="44,9,691,0" VerticalAlignment="Top" Foreground="White" FontSize="15" Grid.Column="1">Flipped</TextBlock>
+        <!-- Side Panel -->
+        <Button Click="HomeButton_Click" x:Name="Home" Background="Transparent" MouseEnter="HomeEnter" MouseLeave="HomeLeave" BorderThickness="0" Height="74" Width="71" VerticalAlignment="Top" Margin="1,39,0,0" Grid.Column="1">
+            <Grid>
+                <ui:SymbolIcon HorizontalAlignment="Center" x:Name="HomeSymbol" Margin="0,-20,0,0" FontSize="30" Symbol="Home24"/>
+                <TextBlock Margin="0,21,0,-20" x:Name="HomeText">Home</TextBlock>
+            </Grid>
+        </Button>
+        <Button Click="LibraryButton_Click" x:Name="Library" Background="Transparent" MouseEnter="LibraryEnter" MouseLeave="LibraryLeave" BorderThickness="0" Height="74" Width="71" VerticalAlignment="Top" Margin="1,118,0,0" Grid.Column="1">
+            <Grid>
+                <ui:SymbolIcon HorizontalAlignment="Center"  x:Name="LibrarySymbol" Margin="0,-20,0,0" FontSize="30" Symbol="Library24"/>
+                <TextBlock Margin="0,39,0,0"  x:Name="LibraryText" VerticalAlignment="Top" HorizontalAlignment="Center">Library</TextBlock>
+            </Grid>
+        </Button>
+        <Button Click="SettingsButton_Click" x:Name="Settings" Background="Transparent" MouseEnter="SettingsEnter" MouseLeave="SettingsLeave" BorderThickness="0" Height="75" Width="71" VerticalAlignment="Top" Margin="1,535,0,0" Grid.Column="1">
+            <Grid>
+                <ui:SymbolIcon HorizontalAlignment="Center" x:Name="SettingsSymbol"  Margin="0,-20,0,0" FontSize="30" Symbol="Settings24"/>
+                <TextBlock Margin="0,39,0,0" VerticalAlignment="Top" FontSize="12"  x:Name="SettingsText" HorizontalAlignment="Center">Settings</TextBlock>
+            </Grid>
+        </Button>
+        <Button Click="ShopButton_Click" x:Name="Shop" Background="Transparent" MouseEnter="ShopEnter" MouseLeave="ShopLeave" BorderThickness="0" Height="75" Width="71" VerticalAlignment="Top" Margin="-102,184,0,0">
+            <Grid>
+                <ui:SymbolIcon HorizontalAlignment="Center" x:Name="ShopSymbol"  Margin="0,-20,0,0" FontSize="30" Symbol="ShoppingBag16"/>
+                <TextBlock Margin="0,39,0,0" VerticalAlignment="Top" FontSize="12"  x:Name="ShopText" HorizontalAlignment="Center">Shop</TextBlock>
+            </Grid>
+        </Button>
+        <!--- Main Content -->
+        <Border CornerRadius="10" Margin="77,37,-16,-18">
+            <Border.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#101c30" Offset="0.0"/>
+                    <GradientStop Color="#0e1e38" Offset="1.0"/>
+                </LinearGradientBrush>
+            </Border.Background>
+            <Frame x:Name="ContentFrame" Margin="0,0,17,19">
+
+            </Frame>
+        </Border>
+        <Frame x:Name="SettingsContentFrame" Visibility="Collapsed" Margin="0,37,0,0">
+
+        </Frame>
+    </Grid>
+</Window>

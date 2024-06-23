@@ -1,0 +1,164 @@
+﻿<Page x:Class="Flipped.Frames.Pages.Library"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Flipped.Frames.Pages"
+      xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+      mc:Ignorable="d" 
+      d:DesignHeight="582" d:DesignWidth="942"
+      Title="Library">
+
+    <Grid>
+        <Border Background="#040d1c" CornerRadius="10" Margin="15,16,269,485">
+            <Grid Margin="0,0,30,0">
+                <TextBlock FontSize="20" FontFamily="Arial Nova" VerticalAlignment="Center" FontWeight="Bold" Foreground="White" Margin="15,0,-22,0">Library</TextBlock>
+                <TextBlock FontSize="20" FontFamily="Arial Nova" x:Name="Title" VerticalAlignment="Top" FontWeight="Normal" Foreground="White" Margin="30,100,-31,0">Enjoy Flipped!</TextBlock>
+            </Grid>
+        </Border>
+        <Border Background="#040d1c" CornerRadius="10" Margin="692,16,18,485">
+            <Grid Margin="0,0,10,0">
+                <Ellipse Height="42" Stroke="Transparent" StrokeThickness="2" VerticalAlignment="Center" Margin="169,0,10,0">
+                    <Ellipse.Fill>
+                        <ImageBrush x:Name="PFP" ImageSource="/Assets/UserSkin.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <TextBlock FontSize="12" x:Name="UsernameText2" FontFamily="Arial Nova" VerticalAlignment="Top" FontWeight="Bold" Foreground="White" Margin="21,27,41,0">Player</TextBlock>
+                <TextBlock x:Name="UserID" FontSize="9" FontFamily="Arial Nova" VerticalAlignment="Top"   FontWeight="Normal" Foreground="Gray" Margin="21,46,62,0">User ID</TextBlock>
+            </Grid>
+        </Border>
+        <!-- Add Build -->
+        <Border Margin="0,-50,0,49">
+            <Grid>
+                <Image Source="/Assets/AddBuild.png" Stretch="Fill" Margin="17,163,750,184">
+                </Image>
+                <ui:Button Click="ImportBuild" Height="235" Width="172" Margin="17,163,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </Border>
+        <!-- Build 1 -->
+        <Border Margin="217,114,550,283" x:Name="Build1" CornerRadius="5">
+            <Border.Background>
+                <ImageBrush x:Name="Build1Image" ImageSource="/Assets/Season1Poster.jpg" Stretch="UniformToFill"/>
+            </Border.Background>
+            <Grid Margin="0,0,-1,-52">
+                <ui:Button Margin="132,200,0,0" Click="Build1Click" Background="#7864e4" VerticalAlignment="Top" Height="38" Width="41">
+                    <ui:SymbolIcon Symbol="Play12"></ui:SymbolIcon>
+                </ui:Button>
+                <ui:Button Margin="86,200,0,0" Click="Build1Settings" VerticalAlignment="Top" Height="38" Width="41">
+                    <ui:SymbolIcon Symbol="Settings24"></ui:SymbolIcon>
+                </ui:Button>
+                <TextBlock Margin="0,200,103,19" x:Name="Build1Season" Foreground="White" FontWeight="Bold" FontSize="12">Fortnite 1.8</TextBlock>
+                <TextBlock Margin="0,219,103,0" x:Name="Build1Status" Foreground="Gray" FontWeight="Bold" FontSize="8">Unsupported</TextBlock>
+                <Border Margin="76,64,10,64" Visibility="Collapsed" x:Name="Settings1" Background="#242424" Opacity="0.9" CornerRadius="10">
+                    <Grid>
+                        <ui:Button Margin="0,10,0,0" Click="Build1Delete"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="IndianRed" Content="Delete" FontSize="8" Height="23" Width="67"></ui:Button>
+                        <ui:Button Margin="0,38,0,0" Click="Build1Change" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White" Content="Change" FontSize="8" Height="23" Width="67"></ui:Button>
+                        <ui:Button Margin="0,77,0,0" Click="Build1Cancel"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White" Content="Cancel" FontSize="8" Height="23" Width="67"></ui:Button>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+        <Border Margin="421,114,346,283" x:Name="Build2" CornerRadius="5">
+            <Border.Background>
+                <ImageBrush x:Name="Build2Image" ImageSource="/Assets/Season2Poster.jpg" Stretch="UniformToFill"/>
+            </Border.Background>
+            <Grid Margin="0,0,-1,-52">
+                <ui:Button Margin="132,200,0,0" Click="Build2Click" Background="#7864e4" VerticalAlignment="Top" Height="38" Width="41">
+                    <ui:SymbolIcon Symbol="Play12"></ui:SymbolIcon>
+                </ui:Button>
+                <ui:Button Margin="86,200,0,0" Click="Build2Settings" VerticalAlignment="Top" Height="38" Width="41">
+                    <ui:SymbolIcon Symbol="Settings24"></ui:SymbolIcon>
+                </ui:Button>
+                <TextBlock Margin="0,200,103,19" x:Name="Build2Season" Foreground="White" FontWeight="Bold" FontSize="12">Fortnite 2.5</TextBlock>
+                <TextBlock Margin="0,219,103,0" x:Name="Build2Status" Foreground="Gray" FontWeight="Bold" FontSize="8">Unsupported</TextBlock>
+                <Border Margin="76,64,10,64" x:Name="Settings2" Visibility="Collapsed" Background="#242424" Opacity="0.9" CornerRadius="10">
+                    <Grid>
+                        <ui:Button Margin="0,10,0,0" Click="Build2Delete"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="IndianRed" Content="Delete" FontSize="8" Height="23" Width="67"></ui:Button>
+                        <ui:Button Margin="0,38,0,0" Click="Build2Change" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White" Content="Change" FontSize="8" Height="23" Width="67"></ui:Button>
+                        <ui:Button Margin="0,77,0,0" Click="Build2Cancel"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White" Content="Cancel" FontSize="8" Height="23" Width="67"></ui:Button>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+        <Border Margin="628,114,139,283" x:Name="Build3" CornerRadius="5">
+            <Border.Background>
+                <ImageBrush x:Name="Build3Image" ImageSource="/Assets/Season3Poster.jpg" Stretch="UniformToFill"/>
+            </Border.Background>
+            <Grid Margin="0,0,-1,-52">
+                <ui:Button Margin="132,200,0,0" Click="Build3Click" Background="#7864e4" VerticalAlignment="Top" Height="38" Width="41">
+                    <ui:SymbolIcon Symbol="Play12"></ui:SymbolIcon>
+                </ui:Button>
+                <ui:Button Margin="86,200,0,0" Click="Build3Settings" VerticalAlignment="Top" Height="38" Width="41">
+                    <ui:SymbolIcon Symbol="Settings24"></ui:SymbolIcon>
+                </ui:Button>
+                <TextBlock Margin="0,200,103,19" x:Name="Build3Season" Foreground="White" FontWeight="Bold" FontSize="12">Fortnite 3.5</TextBlock>
+                <TextBlock Margin="0,219,103,0" x:Name="Build3Status" Foreground="Gray" FontWeight="Bold" FontSize="8">Unsupported</TextBlock>
+                <Border Margin="76,64,10,64" Visibility="Collapsed" x:Name="Settings3" Background="#242424" Opacity="0.9" CornerRadius="10">
+                    <Grid>
+                        <ui:Button Margin="0,10,0,0" Click="Build3Delete"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="IndianRed" Content="Delete" FontSize="8" Height="23" Width="67"></ui:Button>
+                        <ui:Button Margin="0,38,0,0" Click="Build3Change" VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White" Content="Change" FontSize="8" Height="23" Width="67"></ui:Button>
+                        <ui:Button Margin="0,77,0,0" Click="Build3Cancel"  VerticalAlignment="Top" HorizontalAlignment="Center" Foreground="White" Content="Cancel" FontSize="8" Height="23" Width="67"></ui:Button>
+                    </Grid>
+                </Border>
+            </Grid>
+        </Border>
+        <Frame x:Name="BlurFrame" Background="Black" Visibility="Collapsed" Opacity="0">
+
+        </Frame>
+        <Border Background="#242424" x:Name="Import" Visibility="Collapsed" Opacity="0" Margin="228,138,161,139" CornerRadius="10">
+            <Border.Triggers>
+                <EventTrigger RoutedEvent="Border.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.9" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Border.Triggers>
+
+            <Grid>
+                <TextBlock Margin="28,25,28,135" FontSize="25" Foreground="White" x:Name="SeasonText" FontWeight="Bold">Add an installation</TextBlock>
+                <TextBox Margin="28,76,28,153" IsReadOnly="True" Background="#121212" TextWrapping="Wrap">Locate a folder containing the FortniteGame &amp; Engine files using the browse button.</TextBox>
+                <ui:TextBox Margin="28,167,28,90" x:Name="PathBox" IsReadOnly="True"></ui:TextBox>
+                <ui:Button Margin="405,174,0,0" Click="PathClick" Background="Gray" VerticalAlignment="Top" Foreground="Black" Height="34" Width="114">Browse</ui:Button>
+                <Border Margin="28,232,28,69" Background="Gray" CornerRadius="5"></Border>
+                <ui:Button Margin="433,257,0,0" IsEnabled="False" VerticalAlignment="Top" Height="30" x:Name="Continue" Click="ContinueClick" Background="#242424" Width="90">
+                    <Grid>
+                        <TextBlock Margin="15,0,0,0">Next</TextBlock>
+                        <ui:SymbolIcon Symbol="ArrowNext12" Margin="55,1,0,0" HorizontalAlignment="Left"></ui:SymbolIcon>
+                    </Grid>
+                </ui:Button>
+                <TextBlock Margin="494,30,0,245" FontSize="20" Foreground="White" FontWeight="Medium" RenderTransformOrigin="1.202,0.452">1/2</TextBlock>
+            </Grid>
+        </Border>
+        <Border Background="#242424" x:Name="Add" Visibility="Collapsed" Opacity="0" Margin="228,138,161,139" CornerRadius="10">
+            <Border.Triggers>
+                <EventTrigger RoutedEvent="Border.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="0" To="1" Duration="0:0:0.9" />
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Border.Triggers>
+
+            <Grid>
+                <TextBlock Margin="28,25,28,135" FontSize="25" Foreground="White" FontWeight="Bold">Confirm installation</TextBlock>
+                <TextBox Margin="28,177,28,92" IsReadOnly="True" Background="#121212" x:Name="SeasonText2" TextWrapping="Wrap">Season 1</TextBox>
+                <Border Margin="28,232,28,69" Background="Gray" CornerRadius="5"></Border>
+                <Border Margin="28,72,30,142" CornerRadius="5">
+                    <Border.Background>
+                        <ImageBrush Stretch="UniformToFill"  x:Name="SeasonImage" ImageSource="/Assets/Season1.jpg"></ImageBrush>
+                    </Border.Background>
+                </Border>
+                <ui:Button Margin="433,257,0,0" IsEnabled="False" VerticalAlignment="Top" x:Name="AddBTN" Height="30" Click="AddBuild" Background="#242424" Width="90">
+                    <Grid>
+                        <TextBlock Margin="0,0,0,0">Confirm</TextBlock>
+                        <ui:SymbolIcon Symbol="ArrowNext12" Margin="55,1,0,0" HorizontalAlignment="Left"></ui:SymbolIcon>
+                    </Grid>
+                </ui:Button>
+                <TextBlock Margin="494,30,0,245" FontSize="20" Foreground="White" FontWeight="Medium" RenderTransformOrigin="1.202,0.452">2/2</TextBlock>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>
