@@ -1,9 +1,5 @@
 # Flipped-Launcher OSS
 
-take that skid!
-
-![image](https://github.com/Mstreemy/Flipped-Launcher/assets/129096942/766f8933-e953-47af-98dd-7c7ae87c5c11)
-
 to get this to work for your project you need:
 
 - a brain
